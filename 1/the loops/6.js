@@ -8,3 +8,4 @@ while (a > 0) {
     a = parseInt (a/10);
 }
 console.log(result);
+

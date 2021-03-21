@@ -20,23 +20,6 @@ for(var j = 0; j < n; j++) {
 for(var i = 0; i < n; i++) {
   arr [i][0] = false;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 for(var i = 0; i < n; i++) {
   for(var j = 0; j < n; j++) {
     arr[i][j] = false;
@@ -89,7 +72,7 @@ function printArray(array) {
     }
     result += '\n';
   }
-  console.log(result);
+ console.log(result);
 }
 
 

@@ -4,7 +4,7 @@ var sum = 0;
 
 for(var i = 0; i < array.length; i++) {
     if(i % 2 !== 0) {
-        sum = sum + array[i]
+        sum += array[i]
     }
 }
 console.log(sum);
