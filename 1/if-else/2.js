@@ -1,15 +1,16 @@
 //	Определить какой четверти принадлежит точка 
 // с координатами (х,у)
-var x = 0;
-var y = 1;
-if (x > 0 && y > 0) {
-    console.log('Первая четверть');
+function getDot(x,y){
+  if(x > 0 && y > 0) {
+    return 'Первая четверть';
 } else if (x < 0 && y > 0) {
-    console.log('Вторая четверть');
+    return 'Вторая четверть';
 } else if (x < 0 && y < 0) {
-    console.log('Третья четверть');
+    return 'Третья четверть';
 } else if (x > 0 && y < 0) {
-    console.log('Четвертая четверть');
+    return 'Четвертая четверь';
 } else { 
-    console.log('Не в четверти');
+    return 'Не в четверти'
+  } 
 }
+console.log(getDot(-1,0));

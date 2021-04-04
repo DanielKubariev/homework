@@ -1,11 +1,8 @@
 //1.	Если а – четное посчитать а*б, иначе а+б
-
-var a = 10;
-var b = 5;
-if (a % 2 === 0) {
-    console.log (a * b);
-}   
-else {
-    console.log (a + b);
+function sumOrMul(a,b){
+  if (a % 2 === 0) {
+    return a * b;
+  }
+  return a + b;
 }
-
+console.log(sumOrMul(2,3))
