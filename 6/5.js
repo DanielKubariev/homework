@@ -23,5 +23,5 @@ function getNextPalindrome(num){
   } 
   return num;
 }
-console.log(getNextPalindrome(1));
+console.log(getNextPalindrome(999));
 

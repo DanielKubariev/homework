@@ -1,15 +1,22 @@
 // Найти суммы только положительных из трех чисел
-var [a,b,c] = [4,2,5];
-var result  = 0;
-if (a > 0) {
-    result += a
-} 
-if  (b > 0) {
-    result += b
+
+function sumOfPositive(a,b,c){
+  if(a,b,c === undefined){
+    return 'Введите все входные данные';
+  }
+  var result  = null;
+  if(a > 0) {
+    result += a;
+  } 
+  if(b > 0) {
+    result += b;
+  }
+  if(c > 0) {
+    result += c;
+  }
+  return result;
 }
-if (c > 0) {
-    result += c
-}
-console.log(result);
+
+module.exports = sumOfPositive;
 
 

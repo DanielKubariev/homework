@@ -1,25 +1,30 @@
 //Написать программу определения оценки студента по его рейтингу, на основе следующих правил
 // 0-19	F 20-39	E 40-59	D 60-74	C 75-89	B 90-100	A
 
-var rating = 10;
+function findMark(r){
+	if(r === undefined){
+    return 'Введите все входные данные';
+  }
+	if (r >= 0 && r <= 19) {
+    return 'F';
+}
+	if (r >= 20 && r <= 39) {
+    return 'E';
+}
+	if (r >= 40 && r <= 59) {
+		return 'D';
+}
+	if (r >= 60 && r <= 74) {
+		return 'C';
+}
+	if (r >= 75 && r <= 89) {
+		return 'B';
+}
+	if (r >= 90 && r <= 100) {
+		return 'A';
+} 
+	return 'Incorrect data';
+}
 
-if (rating >= 0 && rating <= 19) {
-    console.log('F');
-}
-else if (rating >= 20 && rating <= 39) {
-    console.log('E');
-}
-else if (rating >= 40 && rating <= 59) {
-    console.log('D');
-}
-else if (rating >= 60 && rating <= 74) {
-    console.log('C');
-}
-else if (rating >= 75 && rating <= 89) {
-    console.log('B');
-}
-else if (rating >= 90 && rating <= 100) {
-    console.log('A');
-} else {
-    console.log('incorrect data');
-}
+console.log(findMark(90));
+module.exports = findMark;

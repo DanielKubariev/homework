@@ -1,10 +1,13 @@
 // 7. Посчитать количество нечетных элементов массива
-
-var arr = [1,2,3,3];
-var q = 0;
-for(var i = 0; i < arr.length; i++){
-  if(arr[i] % 2 !== 0){
-    q++;
-  }
+function findSumOfOddEl(array){
+	if(array === undefined){
+    return 'Введите все входные данные';
+  }   
+  var q = 0;
+  for(var i = 0; i < array.length; i++){
+    if(array[i] % 2 !== 0){
+     q++;
+    }
+  } return q;
 }
-console.log(q);
+console.log(findSumOfOddEl([1,1,2,2,1]));

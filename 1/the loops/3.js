@@ -4,10 +4,10 @@ function getPodbor (num) {
     {   
         var q = i*i;
         if (num === q) {
-            console.log(i); break;
+            return (i); 
         } 
         if(num < q) {
-            console.log(i - 1); break;
+            return(i - 1);
         } 
     } 
 }
@@ -18,7 +18,7 @@ function getBinar (num) {
         if  (i === b) break;
         b = i;
     }
-    console.log(Math.round(b));
+    return Math.round(b);
 }
 
 getBinar(25)

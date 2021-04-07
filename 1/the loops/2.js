@@ -1,17 +1,20 @@
 //2.	Проверить простое ли число? (число называется простым, если оно делится только само на себя и на 1)
-var n = 2;
-var prostoe = true;
-if (n <= 0 || n % 1 !== 0) {
-    console.log('неверные данные');
-    return;
-} 
-for (i = 2; i < n; i++) {
-    if (n % i === 0) { 
-        prostoe = false;
-    } 
+function getProstoeNum(n){
+	if(n === undefined){
+    return 'Введите все входные данные';
+  }
+  if(n === 2|| n === 1) {
+    return  `простое число`
+  }
+  if(n < 1 || n % 1 !== 0){
+    return 'не простое число'
+  }
+  for(var i = 1; i < n; i++){
+    if(n % i === 0){
+      return `не простое число`
+    }
+    return `простое число`
+  }
 }
-if (prostoe === true) {
-    console.log('простое');
-} else {
-    console.log('не простое');
-}
+
+console.log(getProstoeNum(3.3));

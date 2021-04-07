@@ -1,16 +1,24 @@
 //	Определить какой четверти принадлежит точка 
 // с координатами (х,у)
 function getDot(x,y){
+  if((x,y) === undefined) {
+    return 'Введите входные данные';
+  }
   if(x > 0 && y > 0) {
     return 'Первая четверть';
-} else if (x < 0 && y > 0) {
+} 
+  if(x < 0 && y > 0) {
     return 'Вторая четверть';
-} else if (x < 0 && y < 0) {
+} 
+  if(x < 0 && y < 0) {
     return 'Третья четверть';
-} else if (x > 0 && y < 0) {
-    return 'Четвертая четверь';
-} else { 
-    return 'Не в четверти'
-  } 
+} 
+  if(x > 0 && y < 0) {
+    return 'Четвертая четверть';
+}    
+   return 'Точка лежит на осях'
+  
 }
-console.log(getDot(-1,0));
+
+
+module.exports = getDot;
