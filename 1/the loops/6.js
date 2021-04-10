@@ -12,4 +12,5 @@ function mirror(a){
 	}
 	return result;
 }
-console.log(mirror(123));
+console.log(mirror(321));
+module.exports = mirror;

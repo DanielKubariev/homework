@@ -9,12 +9,13 @@ function getProstoeNum(n){
   if(n < 1 || n % 1 !== 0){
     return 'не простое число'
   }
-  for(var i = 1; i < n; i++){
+  for(var i = 2; i < n; i++){
     if(n % i === 0){
       return `не простое число`
     }
     return `простое число`
   }
 }
+console.log(getProstoeNum(11));
 
-console.log(getProstoeNum(3.3));
+module.exports = getProstoeNum;

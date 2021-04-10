@@ -12,7 +12,7 @@ function findFactorial(num){
   }
   return f
 }
-console.log(findFactorial(4));
+module.exports = findFactorial;
 
 
 
