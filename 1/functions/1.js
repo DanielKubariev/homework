@@ -4,13 +4,22 @@ function getDayName(a){
   if(a === undefined){
     return 'Введите все входные данные';
   }
-  if(a === 1) return 'Monday';
-  if(a === 2) return 'Tuesday';
-  if(a === 3) return 'Wednesday';
-  if(a === 4) return 'Thursday';
-  if(a === 5) return 'Friday';
-  if(a === 6) return 'Saturday';
-  if(a === 7) return 'Sunday';
-  else return 'incorrect number'
+  if(typeof a !== 'number'){
+    return 'Введите число от 1 до 7';
+  }
+  if(a < 1 || a > 7){
+    return 'Введите число от 1 до 7'
+  } 
+  var result = [
+    'Понедельник',
+    'Вторник',
+    'Среда',
+    'Четверг',
+    'Пятница',
+    'Суббота',
+    'Воскресенье'
+  ]
+  return result[a-1]
 }
-console.log(getDayName(8));
+console.log(getDayName(7));
+module.exports = getDayName;

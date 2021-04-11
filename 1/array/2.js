@@ -12,8 +12,9 @@ function findMaxEl(array){
 	return max;
 }
 
+console.log(findMaxEl());
 
+module.exports = findMaxEl;
 
-console.log(findMaxEl([-1,-2,-3,4]));
 
 

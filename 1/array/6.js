@@ -10,3 +10,5 @@ function reverseArr(array){
   return reverse;
 }
 console.log(reverseArr([1,2,3,4]));
+
+module.exports = reverseArr;

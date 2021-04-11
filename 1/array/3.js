@@ -14,4 +14,5 @@ function findMinElIndex(array){
   return minIndex;
 }
 console.log(findMinElIndex([10,2,3,4,5,15]));
+module.exports = findMinElIndex;
 

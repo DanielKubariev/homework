@@ -11,3 +11,5 @@ function findSumOfOddEl(array){
   } return q;
 }
 console.log(findSumOfOddEl([1,1,2,2,1]));
+
+module.exports = findSumOfOddEl;

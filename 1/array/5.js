@@ -13,3 +13,4 @@ function calcSumOfOddIndexEl(array){
 	return sum;
 }
 console.log(calcSumOfOddIndexEl([2,1,2,1,2,1]));
+module.exports = calcSumOfOddIndexEl;

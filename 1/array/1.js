@@ -11,8 +11,8 @@ function findMinEl(array){
   }
   return min;
 }
-console.log(findMinEl([-1,-2,-3,-4]));
+console.log(findMinEl());
 
 
-
+module.exports = findMinEl;
 

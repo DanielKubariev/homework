@@ -15,3 +15,5 @@ function findMaxElIndex(array){
   return maxIndex;
 }
 console.log(findMaxElIndex([10,2,3,4,5,15]));
+
+module.exports = findMaxElIndex;
