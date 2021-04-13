@@ -5,10 +5,10 @@ function switchHalfsOfArr(array){
     return 'Введите все входные данные';
   }   
   var replace = [];
-  for(var i = parseInt((array.length)/2); i < array.length; i++){
+  for(var i = (array.length)/2; i < array.length; i++){
     replace.push(array[i]);
   }
-  for(i = 0; i < parseInt(array.length/2); i++){
+  for(i = 0; i < array.length/2; i++){
     replace.push(array[i]);
   }
   return replace;

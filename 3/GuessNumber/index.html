@@ -5,33 +5,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Угадай число!</title>
-  <link rel = "stylesheet" href ="./css/general.css">
+  <link rel="stylesheet" href ="./css/general.css">
   <link rel="stylesheet" href = "./css/guess-number.css">
   </head>
 <body>
-  <div class = "item">
-    <div class = "item__main" >
+  <div class="item">
+    <div class="item__main" >
         <div class="item__row">
-          <label id = "item__error"></label>
+          <label сlass="item__greet" id="item__error"></label>
         </div>
-        <div class = "item__row">
-        
-        <label> Диапазон чисел:</label>
-        <input id = "item__minInputNumber" type = "number" min = "1" max = "200" placeholder="1">
-        <span>-</span>
-        <input id = "item__maxInputNumber" type = "number" min = "1" max ="200" placeholder="200">
+        <div class="item__row">
+          <label сlass="item__nametag"> Диапазон чисел:</label>
+          <input id="item__minInputNumber" type ="number" min ="1" max ="200" placeholder="1">
+          <span>-</span>
+          <input id="item__maxInputNumber" type ="number" min = "1" max ="200" placeholder="200">
         </div>
-        <div class ="item__row">
-        <label> Количество попыток: </label>
-        <input id = "item__attemptsInput" type="number" min="1" max="15" placeholder="1-15">
+        <div class="item__row">
+          <label сlass="item__nametag"> Количество попыток: </label>
+          <input id="item__attemptsInput" type="number" min="1" max="15" placeholder="1-15">
         </div>
-        <div class = "item__row"> 
-        <button id = "start__btn">Старт</button>
+        <div class="item__row"> 
+          <button class="item__btns" id ="start__btn">Старт</button>
         </div>
-        <div class = "item__row">
-        <button id = "btn__Default">Начать с дефолтными настройками!</button>
+        <div class="item__row">
+          <button class="item__btns" id="btn__Default">Начать с дефолтными настройками!</button>
         </div>
-        </div>
+      </div>
     </div>
   </div>
   <script src ="./js/main-page.js"> </script>

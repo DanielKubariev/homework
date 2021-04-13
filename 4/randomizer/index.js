@@ -1,8 +1,8 @@
 var arr = [];
-var minInput = document.getElementById('item__row__minInputNumber');
-var maxInput = document.getElementById('item__row__maxInputNumber');
-var output = document.getElementById('outputRandomNumber');
-var error = document.getElementById('errorLbl');
+var minInput = document.getElementById('item__row__min-input-number');
+var maxInput = document.getElementById('item__row__max-input-number');
+var output = document.getElementById('output-random-number');
+var error = document.getElementById('error-lbl');
 
 function getRandom(min,max){
   return Math.floor(Math.random() * (max + 1 - min)) + min;
@@ -15,7 +15,7 @@ function generateRandomNumber(){
     return;
   }
   if(arr.length === max - min + 1){
-    document.getElementById('generateBtn').disabled;
+    document.getElementById('generate-btn').disabled = true;
     output.innerHTML = `Generated number: Elements are over`
     return;
   }
@@ -26,12 +26,14 @@ function generateRandomNumber(){
   arr.push(random)
   output.innerHTML = `Generated number:${random}`
 }
+  
 function reset(){
   arr =[];
   minInput.value = null;
   maxInput.value = null;
   error.innerHTML = '';
   output.innerHTML = '';
+  document.getElementById('generate-btn').disabled = false;
 }
-document.getElementById('resetBtn').addEventListener('click',reset);
-document.getElementById('generateBtn').addEventListener('click',generateRandomNumber);
+document.getElementById('reset-btn').addEventListener('click',reset);
+document.getElementById('generate-btn').addEventListener('click',generateRandomNumber);

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9feaabd1-2eff-41ef-bc74-7ab2c5301f23" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../1/array/8.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../1/array/8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../3/GuessNumber/game.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../3/GuessNumber/game.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../3/GuessNumber/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../3/GuessNumber/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1r7FtpqUQy9r08CSiurqfikUWu3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9feaabd1-2eff-41ef-bc74-7ab2c5301f23" name="Default Changelist" comment="" />
+      <created>1618319441311</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1618319441311</updated>
+      <workItem from="1618319441312" duration="5000" />
+    </task>
+    <servers />
+  </component>
+</project>
