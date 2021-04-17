@@ -33,7 +33,7 @@ function loaded(){
   console.log(aimNumber);
 
  
-  document.getElementById('helloLabel').innerHTML =
+  document.getElementById('hello-lbl').innerHTML =
   `Привет, я загадал число от ${min} до ${max} попробуй угадать его за ${attempts} раз`;
 
   
@@ -41,8 +41,8 @@ function loaded(){
 document.addEventListener('DOMContentLoaded',loaded);
 
 function guessNumber() {
-  var number = Number(document.getElementById('numberInput').value);
-  var helpLabel = document.getElementById('helpLabel');
+  var number = Number(document.getElementById('number-input').value);
+  var helpLabel = document.getElementById('help-lbl');
   tries++
 
   if(number === aimNumber) {

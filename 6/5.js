@@ -5,7 +5,7 @@
 // //Your code here
 // return result;
 // }
-// getNextPalindrome(7) // returns 11
+// getNextPalindrome(7) // returns 7
 
 function getPalindrome(num){
   num = num.toString();

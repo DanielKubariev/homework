@@ -25,5 +25,5 @@ function getNumber(arr){
     }
   }
 }
-console.log(getNumber([0, 2, 8, -4, 0, -122, 13, -4, 28, 12]));
+console.log(getNumber([1, 5, 7, 9, 15, 19, 777, -15, -11, 4, 9, 23, -17]));
 

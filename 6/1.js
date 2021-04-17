@@ -13,5 +13,5 @@
 function getCookingTime(num){
   return Math.ceil(num / 5) * 5;
   } 
-console.log(`варим ` + getCookingTime(25)+` минут`);
+console.log(`варим ` + getCookingTime(12)+` минут`);
 

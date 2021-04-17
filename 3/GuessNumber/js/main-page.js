@@ -1,7 +1,7 @@
 function start(){
-  var min = Number(document.getElementById('item__minInputNumber').value);
-  var max = Number(document.getElementById('item__maxInputNumber').value);
-  var attempts = Number(document.getElementById('item__attemptsInput').value);
+  var min = Number(document.getElementById('item__min-input-number').value);
+  var max = Number(document.getElementById('item__max-input-number').value);
+  var attempts = Number(document.getElementById('item__attempts-input').value);
 
   if(min > 0 && min <= 200 && min % 1 === 0 && max > 0 && max <= 200 && max % 1 === 0 && max >= min && attempts > 0 && attempts < 16 && attempts % 1 === 0){
     var config = {
@@ -20,7 +20,7 @@ function start(){
   }
 
 }
-document.getElementById('btn__Default').addEventListener('click', function(){
+document.getElementById('default__btn').addEventListener('click', function(){
 window.location.href = './game.html'
 })
 
