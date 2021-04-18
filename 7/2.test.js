@@ -15,4 +15,13 @@ describe('sum', function(){
   it(`should return '19999999998'`, function(){
     expect(sum('9999999999','9999999999')).toBe('19999999998' );
   });
+  it(`should return 'Неверные данные'`, function(){
+    expect(sum(111,111)).toBe('Неверные данные');
+  });
+  it(`should return 'Неверные данные'`, function(){
+    expect(sum('111',111)).toBe('Неверные данные');
+  });
+  it(`should return 'Неверные данные'`, function(){
+    expect(sum(111,'111')).toBe('Неверные данные');
+  });
 })

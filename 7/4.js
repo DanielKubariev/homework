@@ -1,5 +1,8 @@
 // 4.Напишите функцию кеш
 function complexFunction(arg1,arg2) {
+  if(arg1,arg2 === undefined){
+    return 'Введите все входные данные';
+  }
 	return arg1+arg2;
 }
 function cache(func){
@@ -22,8 +25,8 @@ function cache(func){
 
 var cachedFunc = cache(complexFunction);
 
-
-
 console.log(cachedFunc('foo', 'bar')); // complexFunction должна выполнится
 console.log(cachedFunc('foo', 'bar'));// complexFunction не должна выполняться  				// снова,должен вернуться кеш
 console.log(cachedFunc('foo', 'baz')); // complexFunction должна выполнится
+
+module.exports = cachedFunc;

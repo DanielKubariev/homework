@@ -1,6 +1,6 @@
 // Создайте функцию, которая получает два аргумента: первый - это массив объектов, второй - строка (имя автора). 
 // Ваша функция должна возвращать количество сообщений с автором из аргумента функции и комментариев с тем же автором. Пример массива: 
-let listOfPosts2 = [
+var listOfPosts2 = [
     {
         id: 1,
         post: 'some post1',
@@ -63,6 +63,12 @@ let listOfPosts2 = [
 ]
 
 function getQuantityPostsByAuthor (array,author) {
+	if(array,author === undefined){
+    return 'Введите все входные данные';
+  }
+	if(typeof author !== 'string' || Array.isArray(array) === false){
+    return 'Введите верные данные';
+  }
   var someObj ={
     posts: 0,
     comments: 0
@@ -78,9 +84,11 @@ function getQuantityPostsByAuthor (array,author) {
 				}
 			}
 		}
-	
 	}
 	return someObj;
 }
+console.log(getQuantityPostsByAuthor(listOfPosts2,'Rimus'));
+
 var result = getQuantityPostsByAuthor(listOfPosts2,'Rimus');
 console.log(`post - ${result.posts}, comments - ${result.comments}`);
+module.exports = getQuantityPostsByAuthor
