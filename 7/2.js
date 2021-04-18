@@ -1,4 +1,7 @@
 function sum(a, b) {
+  if(a,b === undefined){
+    return 'Введите все входные данные';
+  }
   var table = [
     [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
     [1, 2, 3, 4, 5, 6, 7, 8, 9, 0],
@@ -52,7 +55,8 @@ function sum(a, b) {
   return result;
 }
 
-console.log(sum('999','999'));
+console.log(sum('9999999999','9999999999'));
 
+module.exports = sum;
 // 123 123
 //321 321 = 2 4 6
