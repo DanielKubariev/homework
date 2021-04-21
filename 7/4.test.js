@@ -1,16 +1,32 @@
-var cachedFunc = require('./4');
+var cache = require('./4');
+
 describe('cachedFunc', function(){
   it('should be defined', function(){
-    expect(cachedFunc).toBeDefined();
+    expect(cache).toBeDefined();
   });
   it('should be function', function(){
-    expect(typeof cachedFunc).toBe('function');
+    expect(typeof cache).toBe('function');
   });
-  it('should not be without arguments', function(){
-    expect(cachedFunc()).toBe('Введите все входные данные');
+  it('result should be function', function(){
+    expect(typeof cache()).toBe('function');
   });
-  it(`should return 'foobar'`, function(){
-    expect(cachedFunc('foo', 'bar')).toBe('foobar' );
+  it('callback should be called once', function() {
+    var funcMock = jest.fn();
+    var cachedFunc = cache(funcMock);
+    cachedFunc(1, 1)
+    cachedFunc(1, 1)
+
+    expect(funcMock).toBeCalledTimes(1);
   });
-  //есть вопросы с тем как тут тестировать повторный вызов функции !? 
+  it('callback should be called twice', function() {
+    var funcMock = jest.fn();
+    var cachedFunc = cache(funcMock);
+    cachedFunc(1, 1)
+    cachedFunc('a', 1)
+    cachedFunc(1, 1)
+    cachedFunc('a', 1)
+    cachedFunc('a', 1)
+
+    expect(funcMock).toBeCalledTimes(2);
+  });
 });

@@ -5,6 +5,7 @@ function complexFunction(arg1,arg2) {
   }
 	return arg1+arg2;
 }
+
 function cache(func){
   var array = [];
   return function(arg1,arg2){
@@ -14,12 +15,13 @@ function cache(func){
       }
     }
     console.log('NEW EXECUTION OF FUNC');
+    var tempResult = func(arg1, arg2);
     array.push({
       first: arg1,
       second: arg2,
-      result: func(arg1,arg2)
+      result: tempResult
     });
-    return func(arg1,arg2); 
+    return tempResult; 
   }
 }
 
@@ -29,4 +31,4 @@ console.log(cachedFunc('foo', 'bar')); // complexFunction должна выпо�
 console.log(cachedFunc('foo', 'bar'));// complexFunction не должна выполняться  				// снова,должен вернуться кеш
 console.log(cachedFunc('foo', 'baz')); // complexFunction должна выполнится
 
-module.exports = cachedFunc;
+module.exports = cache;
