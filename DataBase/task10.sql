@@ -1,0 +1,1 @@
+SELECT name, COUNT(person.id) FROM street JOIN person WHERE person.id_street = street.id GROUP BY 1  HAVING COUNT(person.id) < 3;

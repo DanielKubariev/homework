@@ -1,0 +1,1 @@
+SELECT name FROM street WHERE name LIKE '______';

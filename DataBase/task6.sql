@@ -1,0 +1,1 @@
+SELECT * FROM person WHERE id_street IS NULL;
