@@ -1,1 +1,1 @@
-SELECT last_name FROM person WHERE last_name LIKE '%_б_%' GROUP BY last_name; 
+SELECT last_name FROM person WHERE last_name LIKE '_%б%_' GROUP BY last_name; 
